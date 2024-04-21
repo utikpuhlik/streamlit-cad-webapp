@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "streamlit_cad_webapp"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 streamlit = "^1.33.0"
 pillow = "^10.3.0"
 numpy = "^1.26.4"

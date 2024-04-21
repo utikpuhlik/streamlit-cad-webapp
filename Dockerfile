@@ -22,4 +22,4 @@ EXPOSE 8501
 
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
-CMD ["python", "-m", "run", "streamlit_cad_webapp/__main__.py"]
+CMD ["python", "-m", "streamlit", "run", "streamlit_cad_webapp/__main__.py"]
