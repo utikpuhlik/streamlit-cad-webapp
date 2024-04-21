@@ -1,0 +1,14 @@
+networks:
+  nginx_nginx-network:
+    external: true
+
+services:
+  taipy:
+    image: ghcr.io/utikpuhlik/streamlit_cad_webapp
+    build:
+        context: .
+    container_name: taipy-cad-webapp
+    env_file:
+      - .env
+    networks:
+      - nginx_nginx-network
