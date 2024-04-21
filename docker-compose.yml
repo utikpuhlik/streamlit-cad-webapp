@@ -7,8 +7,10 @@ services:
     image: ghcr.io/utikpuhlik/streamlit_cad_webapp
     build:
         context: .
-    container_name: taipy-cad-webapp
+    container_name: streamlit-cad-webapp
     env_file:
       - .env
+    ports:
+        - "8501:8501"
     networks:
       - nginx_nginx-network
