@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 WORKDIR /opt
 
-COPY pyproject.toml ./
+#COPY pyproject.toml ./
 COPY poetry.lock ./
 COPY README.md ./
 COPY streamlit_cad_webapp/ ./streamlit_cad_webapp
