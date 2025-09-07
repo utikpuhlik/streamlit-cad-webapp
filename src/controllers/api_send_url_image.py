@@ -1,5 +1,5 @@
 import requests
-from streamlit_cad_webapp.config.config import settings
+from src.config.config import settings
 
 
 def send_request_to_API_URL(

@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 from pydantic_core import ValidationError
 
-from streamlit_cad_webapp.common.download_image_with_url import get_image_from_url
-from streamlit_cad_webapp.common.validate_url import URL
-from streamlit_cad_webapp.controllers.api_send_binary_image import send_request_to_API
-from streamlit_cad_webapp.controllers.api_send_url_image import send_request_to_API_URL
+from src.common.download_image_with_url import get_image_from_url
+from src.common.validate_url import URL
+from src.controllers.api_send_binary_image import send_request_to_API
+from src.controllers.api_send_url_image import send_request_to_API_URL
 
 st.set_page_config(
     page_title="Vehicle Crash Detection App",

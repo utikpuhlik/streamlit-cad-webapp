@@ -1,20 +1,13 @@
-[tool.poetry]
+[project]
 name = "streamlit-cad-webapp"
 version = "0.1.0"
-description = ""
-authors = ["utikpuhlik <utikpuhlik@win.com>"]
+description = "Add your description here"
 readme = "README.md"
-packages = [{include = "streamlit_cad_webapp"}]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-streamlit = "^1.33.0"
-pillow = "^10.3.0"
-numpy = "^1.26.4"
-environs = "^11.0.0"
-pydantic-settings = "^2.2.1"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "environs>=14.3.0",
+    "numpy>=1.26.4",
+    "pillow>=10.4.0",
+    "pydantic-settings>=2.10.1",
+    "streamlit==1.33.0",
+]

@@ -1,7 +1,7 @@
 from PIL import Image
 import requests
-from streamlit_cad_webapp.common.image_utils import convert_image_to_binary
-from streamlit_cad_webapp.config.config import settings
+from src.common.image_utils import convert_image_to_binary
+from src.config.config import settings
 
 
 def send_request_to_API(image: Image.Image) -> tuple:
