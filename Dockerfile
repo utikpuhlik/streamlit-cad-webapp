@@ -3,6 +3,7 @@ FROM python:3.11-slim
 WORKDIR /opt
 
 COPY pyproject.toml ./
+COPY pyproject.lock ./
 COPY README.md ./
 COPY streamlit_cad_webapp/ ./streamlit_cad_webapp
 
